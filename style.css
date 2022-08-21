@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+*{text-decoration: none;
+    list-style: none;
+
+}
+body{
+    font-family: 'Aboreto', cursive;
+    display: flex;
+    background: linear-gradient(to left, #34030b, #c00c0c, #c00c0c, #34030b);
+}
+
+.left{
+    width: 30%;
+    display: flex;
+    flex-direction: column;   
+    height: 900px;
+}
+.right{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 900px;
+    width: 30%;
+}
+
+.right nav *{
+    margin-right: 10px;   
+    font-weight: 600;
+    float: right;
+    width: 30px;
+    line-height: 5;
+    color:#c00c0c;
+    
+}
+.left nav *{
+    font-weight: 600;
+    float: left;
+    width: 30px;
+    line-height: 5;
+    color:#c00c0c;
+    
+}
+nav li, a{
+
+}
+
+nav span{
+    border: 1px solid black;
+    width: 50px;
+}
+nav :nth-child(2){
+    width: 150px;
+}
+nav :nth-child(4){
+    width: 170px;
+}
+nav :nth-child(6){
+    width: 190px;
+}
+nav :nth-child(8){
+    width: 210px;
+}
+nav :nth-child(10){
+    width: 230px;
+}
+nav :nth-child(12){
+    width: 250px;
+}
+nav :nth-child(14){
+    width: 230px;
+}
+nav :nth-child(16){
+    width: 210px;
+}
+nav :nth-child(18){
+    width: 190px;
+}
+nav :nth-child(20){
+    width: 170px;
+}
+nav :nth-child(22){
+    width: 150px;
+}
+.central{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:5%;
+    min-height: 300px;
+    width: 40%;
+}
+.talkBox{
+    min-width: 100%;
+    padding: 40px;
+    font-family: 'Aboreto', cursive;
+    color: #34030b;
+    font-size: 1em;
+    border-radius: 14px;
+    background: #c00c0c;
+    box-shadow: inset -7px 7px 14px #690716,
+    inset 7px -7px 14px #a30a12;
+}
+.central h1{
+    text-align: center;
+    color: #34030b;
+    padding: .3em;
+    border-radius: 14px;
+    background: #c00c0c;
+    box-shadow: inset -7px 7px 14px #690716,
+    inset 7px -7px 14px #a30a12;
+}
+
+
+.sightless{
+    visibility: hidden;
+}
+.sightless:hover{
+    visibility:visible;
+}
