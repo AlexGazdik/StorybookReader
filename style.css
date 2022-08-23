@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
-*{text-decoration: none;
+*{
+    text-decoration: none;
     list-style: none;
-
 }
 body{
     font-family: 'Aboreto', cursive;
@@ -13,108 +13,170 @@ body{
     width: 30%;
     display: flex;
     flex-direction: column;   
+    justify-content: flex-start;
     height: 900px;
+    margin: 0;
+    /* float:left; */
+}
+.left nav *{
+    font-weight: 600;
+    width: 30px;
+    line-height: 5;
+    color:#c00c0c;
+    margin: 0;
+    
 }
 .right{
-    
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    justify-content: flex-start;
     height: 900px;
     width: 30%;
 }
 
 .right nav *{
-    margin-right: 10px;   
+    margin-right: 20px;
     font-weight: 600;
     float: right;
     width: 30px;
     line-height: 5;
     color:#c00c0c;
-    
 }
-.left nav *{
-    font-weight: 600;
-    float: left;
-    width: 30px;
-    line-height: 5;
-    color:#c00c0c;
-    
-}
-nav li, a{
+.right li a{
+    text-align:right;
+    transform: scale(-1, 1);
+        color: #c00c0c;
+      }
 
-}
+
 
 nav span{
-    border: 1px solid black;
+    border: 2px solid #47b9ff;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
     width: 50px;
 }
 nav :nth-child(2){
-    width: 150px;
+    width: 10vw;
 }
 nav :nth-child(4){
-    width: 170px;
+    width: 11vw;
 }
 nav :nth-child(6){
-    width: 190px;
+    width: 12vw;
 }
 nav :nth-child(8){
-    width: 210px;
+    width: 13vw;
 }
 nav :nth-child(10){
-    width: 230px;
+    width: 14vw;
 }
 nav :nth-child(12){
-    width: 250px;
+    width: 15vw;
 }
 nav :nth-child(14){
-    width: 230px;
+    width: 14vw;
 }
 nav :nth-child(16){
-    width: 210px;
+    width: 13vw;
 }
 nav :nth-child(18){
-    width: 190px;
+    width: 12vw;
 }
 nav :nth-child(20){
-    width: 170px;
+    width: 11vw;
 }
 nav :nth-child(22){
-    width: 150px;
+    width: 10vw;
 }
 .central{
     display: flex;
     flex-direction: column;
+    justify-content:space-between;
     align-items: center;
-    margin-top:5%;
+    text-align: center;
     min-height: 300px;
     width: 40%;
 }
 .talkBox{
-    min-width: 100%;
+    width: 30vw;
     padding: 40px;
     font-family: 'Aboreto', cursive;
     color: #34030b;
-    font-size: 1em;
+    font-size: 1vw;
     border-radius: 14px;
-    background: #c00c0c;
+    background: #c50c0c52;
     box-shadow: inset -7px 7px 14px #690716,
     inset 7px -7px 14px #a30a12;
 }
-.central h1{
+.central h1 span a{
+    font-size: 2vw;;
     text-align: center;
-    color: #34030b;
+    text-decoration: none;
     padding: .3em;
     border-radius: 14px;
-    background: #c00c0c;
+    background: #c50c0c52;
     box-shadow: inset -7px 7px 14px #690716,
     inset 7px -7px 14px #a30a12;
+    color: #34030b;
 }
 
 
 .sightless{
     visibility: hidden;
 }
-.sightless:hover{
-    visibility:visible;
+.title{
+    font-weight: 900;
+    text-align: center;
+    width: 32vw;
+    border-radius: 14px;
+    background: #c50c0c52;
+    box-shadow: inset -7px 7px 14px #690716,
+    inset 7px -7px 14px #a30a12;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-size: 4vw;
+    color: black;
+    padding: 22px;
+    background: linear-gradient(225deg, #ad0b0b, #cd0d0d);
+    box-shadow:  -7px 7px 9px #9a0a0a,
+                 7px -7px 9px #e60e0e;
+}
+
+.blue{
+    color:#47b9ff;
+}
+.controls h1 span a{
+    width: 33vw;
+    display: flex;
+    justify-content: space-between;    
+    background: linear-gradient(225deg, #ad0b0b, #cd0d0d);
+    box-shadow:  -7px 7px 9px #9a0a0a,
+                 7px -7px 9px #e60e0e;
+}
+
+.controls a:hover{
+    color:#47b9ff;
+}
+.sightless a{
+    animation-duration: 7s;
+    animation-direction: reverse;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    width: 300%;
+  }
+
+  50% {
+    font-size: 300%;
+
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
