@@ -14,14 +14,10 @@ body{
     display: flex;
     flex-direction: column;   
     justify-content: flex-start;
-    height: 900px;
-    margin: 0;
-    /* float:left; */
 }
 .left nav *{
     font-weight: 600;
-    width: 30px;
-    line-height: 5;
+    line-height: 3.3;
     color:#c00c0c;
     margin: 0;
     
@@ -30,8 +26,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 900px;
     width: 30%;
+    margin-bottom: 20px;
 }
 
 .right nav *{
@@ -39,7 +35,7 @@ body{
     font-weight: 600;
     float: right;
     width: 30px;
-    line-height: 5;
+    line-height: 3.3;
     color:#c00c0c;
 }
 .right li a{
@@ -95,27 +91,42 @@ nav :nth-child(22){
     justify-content:space-between;
     align-items: center;
     text-align: center;
-    min-height: 300px;
+    /* max-height: 5vh; */
     width: 40%;
+}
+.title{
+    font-weight: 900;
+    text-align: center;
+    width: 45vw;
+    border-radius: 14px;;
+    box-shadow: inset -7px 7px 14px #690716,
+    inset 7px -7px 14px #a30a12;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-size: 7vw;
+    color: black;
+    padding: 22px;
+    background: linear-gradient(225deg, #ad0b0b, #cd0d0d);
+    box-shadow:  -7px 7px 9px #9a0a0a,
+                 7px -7px 9px #e60e0e;
 }
 .talkBox{
     width: 30vw;
-    padding: 40px;
+    padding: 10px;
     font-family: 'Aboreto', cursive;
     color: #34030b;
-    font-size: 1vw;
+    /* font-size: vw; */
     border-radius: 14px;
     background: #c50c0c52;
     box-shadow: inset -7px 7px 14px #690716,
     inset 7px -7px 14px #a30a12;
 }
 .central h1 span a{
-    font-size: 2vw;;
     text-align: center;
     text-decoration: none;
     padding: .3em;
     border-radius: 14px;
-    background: #c50c0c52;
+    background: #690716;
     box-shadow: inset -7px 7px 14px #690716,
     inset 7px -7px 14px #a30a12;
     color: #34030b;
@@ -124,23 +135,6 @@ nav :nth-child(22){
 
 .sightless{
     visibility: hidden;
-}
-.title{
-    font-weight: 900;
-    text-align: center;
-    width: 32vw;
-    border-radius: 14px;
-    background: #c50c0c52;
-    box-shadow: inset -7px 7px 14px #690716,
-    inset 7px -7px 14px #a30a12;
-    margin-bottom: 20px;
-    margin-top: 50px;
-    font-size: 4vw;
-    color: black;
-    padding: 22px;
-    background: linear-gradient(225deg, #ad0b0b, #cd0d0d);
-    box-shadow:  -7px 7px 9px #9a0a0a,
-                 7px -7px 9px #e60e0e;
 }
 
 .blue{
@@ -158,13 +152,13 @@ nav :nth-child(22){
 .controls a:hover{
     color:#47b9ff;
 }
-.sightless a{
+/* .sightless a{
     animation-duration: 7s;
     animation-direction: reverse;
     animation-name: slidein;
-}
+} */
 
-@keyframes slidein {
+/* @keyframes slidein {
   from {
     width: 300%;
   }
@@ -179,4 +173,4 @@ nav :nth-child(22){
     margin-left: 0%;
     width: 100%;
   }
-}
+} */
