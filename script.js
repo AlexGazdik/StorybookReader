@@ -11,7 +11,7 @@ next.addEventListener('click', () => console.log('Hello') )
 
 let typed6 = new Typed('#typed6', {
     strings: ["When i was little, my father was famous. He was the greatest samurai in the empire, and he was the shoguns decapitator. He cut off the heads of a hundred and thirty one lords. It was a bad time for the empire. The shogun justn stayed inside his castle and he never came out. People said his brain was infected by devils"],
-    typeSpeed: 100,
+    typeSpeed: 100, 
     backSpeed: false,
     loop: false,
     cursorChar: '...<strong class="blue">Ⓐ</strong>',
